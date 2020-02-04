@@ -50,7 +50,7 @@ public class Robot {
     positionResp Move(DIRECTIONS directionValue) throws Exception {
         String brackets = "\"" + directionValue.toString() + "\"";
         cells.put("x" + x + "y" + y, 1);
-        System.out.println("Move " + position + "  " + direction + "  " + brackets);
+//        System.out.println("Move " + position + "  " + direction + "  " + brackets);
         webrq.sendPost("move", brackets);
         return GetPosition();
     }
@@ -71,7 +71,7 @@ public class Robot {
         }
         cells.put("x" + x + "y" + y, 2);
         String brackets = "\"" + qwe + "\"";
-        System.out.println("MoveBack " + position + "  " + direction + "  " + qwe);
+//        System.out.println("MoveBack " + position + "  " + direction + "  " + qwe);
         webrq.sendPost("move", brackets);
         return GetPosition();
     }

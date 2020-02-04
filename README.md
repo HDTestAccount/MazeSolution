@@ -10,7 +10,7 @@ the task conditions are in TaskForSolution
 
 to run solution open cmd.exe
 go to Project_Name\target folder and run
-java -jar MazeSolution-1.0.jar
+java -jar MazeSolution-1.0-jar-with-dependencies.jar
 
 in file resources\setting.properties you can change host and port for application
 
