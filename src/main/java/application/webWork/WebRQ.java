@@ -19,6 +19,7 @@ public class WebRQ {
         if (!file.exists()) {
             fileName = "resources\\setting.properties";
         }
+
         try (InputStream input = new FileInputStream(Paths.get(fileName).toFile())) {
             Properties prop = new Properties();
             // load a properties file
@@ -38,13 +39,14 @@ public class WebRQ {
                 .addHeader("Accept-Encoding", "gzip,deflate")  // add request headers
                 .addHeader("Connection", "Keep-Alive")
                 .build();
-        String resp = "";
+        String httpRequestResponce = "";
         try (Response response = httpClient.newCall(request).execute()) {
             if (!response.isSuccessful()) throw new IOException("Unexpected code " + response);
             // Get response body
-            resp = response.body().string();
+            httpRequestResponce = response.body().string();
         }
-        return resp;
+
+        return httpRequestResponce;
     }
 
     public void sendPost(String endPointValue, String endPointRequest) throws Exception {

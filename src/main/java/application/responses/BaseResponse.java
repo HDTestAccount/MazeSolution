@@ -1,5 +1,5 @@
 package application.responses;
 
-public class baseResponse {
+public abstract class BaseResponse {
 
 }

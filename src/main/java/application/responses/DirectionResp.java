@@ -1,46 +1,46 @@
 package application.responses;
 
-public class directionResp extends baseResponse {
-    public boolean North;
-    public boolean South;
-    public boolean East;
-    public boolean West;
+public class DirectionResp extends BaseResponse {
+    public boolean north;
+    public boolean south;
+    public boolean east;
+    public boolean west;
 
     @Override
     public String toString() {
-        return "North:" + North + " South:" + South + " East:" + East + " West:" + West + " ";
+        return "North:" + north + " South:" + south + " East:" + east + " West:" + west + " ";
     }
 
     public boolean getNorth() {
-        return North;
+        return north;
     }
 
     public void setNorth(boolean north) {
-        North = north;
+        this.north = north;
     }
 
     public boolean getSouth() {
-        return South;
+        return south;
     }
 
     public void setSouth(boolean south) {
-        South = south;
+        this.south = south;
     }
 
     public boolean getEast() {
-        return East;
+        return east;
     }
 
     public void setEast(boolean east) {
-        East = east;
+        this.east = east;
     }
 
     public boolean getWest() {
-        return West;
+        return west;
     }
 
     public void setWest(boolean west) {
-        West = west;
+        this.west = west;
     }
 
 }

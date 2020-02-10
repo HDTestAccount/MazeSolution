@@ -1,14 +1,15 @@
 package application.responses;
 
-public class responseFactory {
+public class ResponseFactory {
 
-    public baseResponse getResponseTemplate(String endpoint) {
+    public BaseResponse getResponseTemplate(String endpoint) {
+
         if (endpoint.contains("East")) {
-            return new directionResp();
+            return new DirectionResp();
         } else if (endpoint.contains("State")) {
-            return new stateResp();
+            return new StateResp();
         } else if (endpoint.contains("Position")) {
-            return new positionResp();
+            return new PositionResp();
         } else {
             return null;
         }

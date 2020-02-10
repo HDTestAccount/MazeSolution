@@ -1,13 +1,13 @@
 package application.responses;
 
-public class stateResp extends baseResponse {
-    String State;
+public class StateResp extends BaseResponse {
+    String state;
 
     public String getState() {
-        return State;
+        return state;
     }
 
     public void setState(String state) {
-        State = state;
+        this.state = state;
     }
 }
