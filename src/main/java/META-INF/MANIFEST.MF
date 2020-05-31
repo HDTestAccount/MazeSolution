@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Main-Class: application.MazeSolution
+Main-Class: application
 Class-Path: jackson-core-2.10.2.jar okhttp-4.2.2.jar kotlin-stdlib-commo
  n-1.3.50.jar annotations-13.0.jar jackson-databind-2.10.2.jar okio-2.2.
  2.jar jackson-annotations-2.10.2.jar kotlin-stdlib-1.3.50.jar
