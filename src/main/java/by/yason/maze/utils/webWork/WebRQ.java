@@ -1,4 +1,4 @@
-package maze.utils.webWork;
+package by.yason.maze.utils.webWork;
 
 import okhttp3.*;
 
@@ -9,11 +9,11 @@ import java.io.InputStream;
 import java.nio.file.Paths;
 import java.util.Properties;
 
-public class webRQ {
+public class WebRQ {
     private static String mazeUrl = "";
     private final OkHttpClient httpClient = new OkHttpClient();
 
-    public webRQ() {
+    public WebRQ() {
         String fileName = "src/main/resources/setting.properties";
         File file = new File(Paths.get(fileName).toString());
         if (!file.exists()) {
@@ -63,8 +63,8 @@ public class webRQ {
                 .url(mazeUrl + endPointValue)
                 .addHeader("Accept-Encoding", "gzip,deflate")  // add request headers
                 .addHeader("Connection", "Keep-Alive")
-                .addHeader("Content-Type", "application/json")
-                .post(RequestBody.create(requestBody, MediaType.parse("application/json")))
+                .addHeader("Content-Type", "by.yason.maze.application/json")
+                .post(RequestBody.create(requestBody, MediaType.parse("by.yason.maze.application/json")))
                 .build();
         try (Response response = httpClient.newCall(request).execute()) {
             if (!response.isSuccessful()) throw new IOException("Unexpected code " + response);

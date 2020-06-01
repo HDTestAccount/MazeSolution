@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>ByYason</groupId>
-    <artifactId>MazeSolution</artifactId>
+    <groupId>by.yason</groupId>
+    <artifactId>maze</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
          
@@ -124,7 +124,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>application</mainClass>
+                            <mainClass>by.yason.maze.application</mainClass>
                             <classpathPrefix>dependency-jars/</classpathPrefix>
                         </manifest>
                     </archive>
@@ -181,7 +181,7 @@
                         <configuration>
                             <archive>
                                 <manifest>
-                                    <mainClass>application</mainClass>
+                                    <mainClass>by.yason.maze.application</mainClass>
                                 </manifest>
                             </archive>
                             <descriptorRefs>

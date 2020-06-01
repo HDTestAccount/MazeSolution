@@ -1,18 +1,18 @@
-package maze;
+package by.yason.maze;
 
-import maze.data.DIRECTIONS;
-import maze.data.responses.DirectionResp;
-import maze.data.responses.PositionResp;
-import maze.data.responses.StateResp;
-import maze.utils.webWork.webRQ;
+import by.yason.maze.data.DIRECTIONS;
+import by.yason.maze.data.responses.DirectionResp;
+import by.yason.maze.data.responses.PositionResp;
+import by.yason.maze.data.responses.StateResp;
+import by.yason.maze.utils.webWork.WebRQ;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import static maze.utils.jsonWork.JacsonParser.responseParser;
+import static by.yason.maze.utils.jsonWork.JacsonParser.responseParser;
 
 public class mazeSover {
-    webRQ webrq = new webRQ();
+    WebRQ webrq = new WebRQ();
     Map<String, Integer> cells = new HashMap<String, Integer>();
     StateResp status;
     PositionResp positionResp;
@@ -57,7 +57,7 @@ public class mazeSover {
     }
 
     /**
-     * check current status of maze solution
+     * check current status of by.yason.maze solution
      *
      * @return current status (win, failed, in progress)
      * @throws Exception
@@ -108,7 +108,7 @@ public class mazeSover {
     }
 
     /**
-     * reset maze status to begin
+     * reset by.yason.maze status to begin
      *
      * @throws Exception
      */
@@ -117,7 +117,7 @@ public class mazeSover {
     }
 
     /**
-     * maze solving main method
+     * by.yason.maze solving main method
      *
      * @throws Exception
      */

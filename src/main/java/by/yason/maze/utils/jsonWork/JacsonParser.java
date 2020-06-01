@@ -1,7 +1,7 @@
-package maze.utils.jsonWork;
+package by.yason.maze.utils.jsonWork;
 
-import maze.data.responses.BaseResponse;
-import maze.data.responses.ResponseFactory;
+import by.yason.maze.data.responses.BaseResponse;
+import by.yason.maze.data.responses.ResponseFactory;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.PropertyNamingStrategy;

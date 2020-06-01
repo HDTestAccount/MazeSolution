@@ -1,4 +1,6 @@
-import maze.mazeSover;
+package by.yason.maze;
+
+import by.yason.maze.mazeSover;
 
 /**
  *

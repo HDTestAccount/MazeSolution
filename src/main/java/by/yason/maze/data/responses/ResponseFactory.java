@@ -1,4 +1,4 @@
-package maze.data.responses;
+package by.yason.maze.data.responses;
 
 public class ResponseFactory {
     /**
